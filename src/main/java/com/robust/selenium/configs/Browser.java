@@ -34,6 +34,7 @@ public class Browser {
 						: "selenium-grid".equalsIgnoreCase(launchMode)
 								? new RemoteWebDriver(new URL("localhost:4444"), capabilities)
 								: new ChromeDriver(getChromeOptions());
+				log.info("Got webdriver .. ");				
 			} catch (MalformedURLException e) {
 				log.info("exception trying webdriver .. ");
 				e.printStackTrace();
