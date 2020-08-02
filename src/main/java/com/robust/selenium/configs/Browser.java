@@ -30,6 +30,7 @@ public class Browser {
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 			try {
+				log.info("Going to try to get webdriver .. ");
 				webDriver = "headless".equalsIgnoreCase(launchMode) ? new PhantomJSDriver(getDesiredCapabilities())
 						: "selenium-grid".equalsIgnoreCase(launchMode)
 								? new RemoteWebDriver(new URL("localhost:4444"), capabilities)
