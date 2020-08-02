@@ -38,8 +38,9 @@ public class Browser {
 				e.printStackTrace();
 			}
 		}
-		return webDriver;
 		log.info("returning webdriver .. ");
+		return webDriver;
+
 	}
 
 	private static ChromeOptions getChromeOptions() {
