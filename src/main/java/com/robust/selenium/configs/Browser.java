@@ -44,7 +44,7 @@ public class Browser {
 				e.printStackTrace();
 			}
 		}
-		log.info("returning webdriver .. ");
+		log.info("returning webdriver .. " + webDriver );
 		return webDriver;
 
 	}
