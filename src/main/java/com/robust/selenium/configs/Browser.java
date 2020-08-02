@@ -32,12 +32,12 @@ public class Browser {
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 			log.info("webdriver null 2.. ");
 			try {
-				log.info("Going to try to get webdriver .. ");
+				//log.info("Going to try to get webdriver .. ");
 				webDriver = "headless".equalsIgnoreCase(launchMode) ? new PhantomJSDriver(getDesiredCapabilities())
 						: "selenium-grid".equalsIgnoreCase(launchMode)
 								? new RemoteWebDriver(new URL("localhost:4444"), capabilities)
 								: new ChromeDriver(getChromeOptions());
-				log.info("Got webdriver .. ");				
+				//log.info("Got webdriver .. ");				
 			} catch (MalformedURLException e) {
 				log.info("exception trying webdriver .. ");
 				e.printStackTrace();
