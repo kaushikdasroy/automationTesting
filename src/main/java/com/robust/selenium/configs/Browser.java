@@ -35,6 +35,7 @@ public class Browser {
 								? new RemoteWebDriver(new URL("localhost:4444"), capabilities)
 								: new ChromeDriver(getChromeOptions());
 			} catch (MalformedURLException e) {
+				log.info("exception trying webdriver .. ");
 				e.printStackTrace();
 			}
 		}
