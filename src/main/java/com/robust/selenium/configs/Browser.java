@@ -30,7 +30,7 @@ public class Browser {
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			log.info("webdriver null 1.. ");
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
-			log.info("webdriver null 2.. ");
+			log.info("webdriver null 2... ");
 			try {
 				//log.info("Going to try to get webdriver .. ");
 				webDriver = "headless".equalsIgnoreCase(launchMode) ? new PhantomJSDriver(getDesiredCapabilities())
