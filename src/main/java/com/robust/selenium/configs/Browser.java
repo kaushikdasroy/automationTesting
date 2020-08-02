@@ -26,6 +26,7 @@ public class Browser {
 		log.info("launching browser .. ");
 
 		if (webDriver == null) {
+			log.info("webdriver null .. ");
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 			try {
@@ -38,6 +39,7 @@ public class Browser {
 			}
 		}
 		return webDriver;
+		log.info("returning webdriver .. ");
 	}
 
 	private static ChromeOptions getChromeOptions() {
