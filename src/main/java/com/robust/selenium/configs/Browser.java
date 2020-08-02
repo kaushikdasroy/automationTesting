@@ -29,7 +29,7 @@ public class Browser {
 			log.info("webdriver null .. ");
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			log.info("webdriver null 1.. ");
-			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
 			log.info("webdriver null 2.. ");
 			try {
 				//log.info("Going to try to get webdriver .. ");
